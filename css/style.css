@@ -1,0 +1,19 @@
+.card {
+    width: 350px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(6px);
+    display: none;
+    opacity: 0;
+    transform: translateY(20px) scale(0.97);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* animasi muncul penuh */
+.card.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
